@@ -344,6 +344,74 @@ You probably want to change the styling.
     margin-right: 10px;
 }
 
+img {
+    width:75%;
+}
+
+.appearbox1 {
+    width: 600px;
+    height: 45px;
+    background-color: hotpink;
+    position: absolute;
+    margin-top: 667px;
+    transition-property: transform;
+    transition-duration: 17s;
+    transition-timing-function: linear;
+}
+
+.appearbox2 {
+    width: 242px;
+    height: 140px;
+    background-color: lawngreen;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 286px;
+    transition-property: transform;
+    transition-duration: 31s;
+    transition-timing-function: linear;
+}
+
+.appearbox3 {
+    width: 180px;
+    height: 140px;
+    background-color: blueviolet;
+    position: absolute;
+    margin-top: 525px;
+    margin-left: 556px;
+    transition-property: transform;
+    transition-duration: 36.5s;
+    transition-timing-function: linear;
+}
+
+.appearbox4 {
+    width: 180px;
+    height: 210px;
+    background-color: orange;
+    position: absolute;
+    margin-top: 505px;
+    margin-left: 780px;
+    transition-property: transform;
+    transition-duration: 100s;
+    transition-timing-function: linear;
+    transform: rotate(20deg);
+}
+
+.sound0 .appearbox1 {
+    transform: translate(650px);
+}
+
+.sound1 .appearbox2 {
+    transform: translate(680px);
+}
+
+.sound6 .appearbox3 {
+    transform: translate(530px);
+}
+
+.sound10 .appearbox4 {
+    transform: translate(200px);
+}
+
 
 
 
