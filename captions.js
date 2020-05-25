@@ -3,8 +3,8 @@ captions[1] = ['8.1','10'];
 captions[2] = ['10.8','12.5'];
 	//And blood-black nothingness began to spin
 captions[3] = ['12.5','15.6'];
-captions[4] = ['17.369','20'];
-captions[5] = ['20.1','23.3'];
+captions[4] = ['17.369','19.995'];
+captions[5] = ['20','23.3'];
 	//Fuck off, skin-job!
 captions[6] = ['23.3','25.2'];
 	
@@ -56,54 +56,45 @@ captions[39] = ['65.2','66.6'];
 captions[40] = ['66.6','69.1'];
 
 captions[41] = ['69.1','70.6'];
-captions[42] = ['70.6','72.2'];
-captions[43] = ['72.2','74.2'];
+captions[42] = ['70.65','72.2'];
+captions[43] = ['72.25','74.2'];
 	// We're done.
 captions[44] = ['77.1','78.7'];
 captions[45] = ['80','81.738'];
 captions[46] = ['82.2','84.3'];
 captions[47] = ['85.4','87'];
 
-//end manual labour
-captions[48] = ['87.68','88.18'];
-captions[49] = ['88.38','88.88'];
-// Have you ever been in an institution. Cells
-captions[50] = ['88.88','91.24'];
-captions[51] = ['91.34','91.84'];
-captions[52] = ['91.98','95.52'];
-// -Cells
-captions[53] = ['95.52','96.02'];
-captions[54] = ['96.12','100.2'];
-captions[55] = ['100.3','102.4'];
-// -Interlinked
-captions[56] = ['102.64','103.3'];
-captions[57] = ['103.3','104.38'];
-captions[58] = ['104.54','105.42'];
-// Dreadfully
-captions[59] = ['105.42','105.92'];
-captions[60] = ['106','106.5'];
-captions[61] = ['106.64','109.28'];
-// -Dreadfully
-captions[62] = ['109.28','109.8'];
-captions[63] = ['109.8','112.4'];
-captions[64] = ['112.4','113'];
-// Dreadfully distinct
-captions[65] = ['113','114.06'];
-captions[66] = ['114.12','114.98'];
-captions[67] = ['115.02','115.56'];
-// -Dark
-captions[68] = ['115.56','116.26'];
-captions[69] = ['116.26','117.4'];
-captions[70] = ['117.4','118.44'];
-// Withing one stem
-captions[71] = ['118.44','120'];
-captions[72] = ['120.46','121.28'];
-captions[73] = ['121.4','122.66'];
-// -And dreadfully distinct
-captions[74] = ['122.66','123.86'];
-captions[75] = ['123.98','124.92'];
-captions[76] = ['124.92','125.52'];
-// A tall white fountain played
-captions[77] = ['125.52','127.28'];
-captions[78] = ['128.18','130.14'];
-captions[79] = ['132.58','135'];
+/////// end manual labour ///////
+captions[48] = ['87.68','88.18']; // Cells
+captions[49] = ['88.38','88.88']; // Cells
+captions[50] = ['88.88','91.24']; // Have you ever been in an institution. Cells
+captions[51] = ['91.34','91.84']; // Cells
+captions[52] = ['91.98','95.40']; // When you're not performing your duties, do they keep you in a little box? Cells.
+captions[53] = ['95.42','95.80']; // Cells
+captions[54] = ['96','96.55'];  // Interlinked
+captions[55] = ['96.6','97'];     // Interlinked
+captions[56] = ['97.2','101']; // What’s it like to hold the hand of someone you love? Interlinked.
+captions[57] = ['102.5','103']; // Interlinked
+captions[58] = ['103.2','103.8']; // Within cells interlinked.
+captions[59] = ['104','105']; // Within cells interlinked.
+captions[60] = ['105.2','105.6'];     // Dreadfully
+captions[61] = ['105.8','106.2']; // Dreadfully
+captions[62] = ['106.3','109'];  // What's it like to be filled with dread? Dreadfully.
+captions[63] = ['109.1','109.5'];   // Dreadfully
+captions[64] = ['109.75','112.2'];     // Do you like being separated from other people? Distinct.
+captions[65] = ['112.25','112.8'];    // Distinct
+captions[66] = ['112.9','113.7']; // Dreadfully distinct
+captions[67] = ['113.8','114.8']; // Dreadfully distinct
+captions[68] = ['114.95','115.2']; // Dark
+captions[69] = ['115.3','115.6'];  // Dark
+captions[70] = ['116','116.9'];  // Within cells interlinked.
+captions[71] = ['117','118'];    // Within cells interlinked.
+captions[72] = ['118.1','119.4']; // Within one stem.
+captions[73] = ['120.2','121'];  // Within one stem.
+captions[74] = ['121.1','122.5']; // And dreadfully distinct
+captions[75] = ['122.6','123.5']; // And dreadfully distinct
+captions[76] = ['123.6','124.1']; // Against the dark.
+captions[77] = ['124.3','125.3']; // Against the dark.
+captions[78] = ['125.35','127']; // A tall white fountain played.
+captions[79] = ['128','129.8'];    // A tall white fountain played.
+captions[80] = ['132.5','135.8'];       // You're not even close to basline.
