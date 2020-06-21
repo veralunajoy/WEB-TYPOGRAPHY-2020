@@ -11,7 +11,7 @@
 <li> Voor de onbekende man die "Fuck off, skin-job" roept, heb ik ook een italic font gebruikt om dezelfde reden als hierboven, maar dan een 'harder' font, omdat het natuurlijk iets naars is wat hij zegt. </li>
 </ul>
 
-Uiteindelijk was mijn idee om het geluid letterlijk vorm te geven in de vorm van 'soundwaves'. Uiteindelijk heb ik hiervoor een onvoldoende gekregen, omdat het de geluiden toch niet goed overbracht. Ik ben het daar wel mee eens, want de beelden waarin simpelweg 'te stil'. Terwijl het er juist om gaat dat de scene levendiger wordt voor Darice.</p>
+Uiteindelijk was mijn idee om het geluid letterlijk vorm te geven in de vorm van 'soundwaves'. Hier heb ik een onvoldoende gekregen, omdat het de geluiden uit de film toch niet goed overbracht. Ik ben het daar wel mee eens, want de beelden waarin simpelweg 'te stil'. Terwijl het er juist om gaat dat de scene levendiger wordt voor Darice.</p>
 
 <h3><b> HERKANSING 20-06-2020 </b></h3>
 <p>Voor de herkansing heb ik de soundwaves verwijdert. Ik heb voor nu (voor het feedbackmoment) het eerste deel gevisualiseerd. Ik heb nu gekozen om de geluiden als wat ze zijn te visualiseren. Dus een alarm moet eruit zien als een alarm, een scan moet eruit zien als een scan, etc. Verder heb ik wat meer gewerkt met kleuren.</p>
