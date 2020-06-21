@@ -1,8 +1,8 @@
 captions[81] = ['0','3.5']; // Drum sound
 captions[82] = ['7.3','8.5']; // Beeping sound
 captions[83] = ['9','10']; // Heavy alarm sound
-captions[84] = ['12.5','13.5']; // small alarm sound
-captions[85] = ['15.8','18']; // Same
+captions[84] = ['12','13.5']; // small alarm sound
+captions[85] = ['15','18']; // Same
 captions[86] = ['24.8','27']; // Same
 captions[87] = ['31','34']; // Same
 captions[88] = ['35','38']; // High pitch

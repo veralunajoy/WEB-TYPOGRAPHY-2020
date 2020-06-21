@@ -5,10 +5,10 @@ body {
 #video-placeholder {
 	display: block;
 	margin: auto;
-	width: 100%;
+	width: 85%;
     height: 500px;
     position: relative;
-    z-index: 3;
+    
 }
 
 p {
@@ -346,93 +346,207 @@ You probably want to change the styling.
     margin-right: 10px;
 }
 
-img {
-    width:75%;
-    z-index: 4;
+/////////* ANIMATIES */////////
+
+ .sound0 .appearbox5 {
+   transform: translate(100px);
 }
 
-/////////* ANIMATIEBLOKKEN */////////
-.appearbox1 {
-    width: 600px;
-    height: 45px;
-    background-color: black;
+
+
+
+
+
+.beepAnimatie {
+    height: 300px;
+    width: 300px;
+    top: 80%;
+    right: -12%;
     position: absolute;
-    margin-top: 667px;
-    transition-property: transform;
-    transition-duration: 17s;
-    transition-timing-function: linear;
+    border-radius: 100%;
 }
 
-.appearbox2 {
-    width: 242px;
-    height: 140px;
-    background-color: black;
-    position: absolute;
-    margin-top: 520px;
-    margin-left: 286px;
-    transition-property: transform;
-    transition-duration: 31s;
-    transition-timing-function: linear;
+.sound1 .beepAnimatie {
+    animation-duration: 8s;
+    animation-name: beepingAlarm;
+    animation-iteration-count: ease-in-out;
 }
 
-.appearbox3 {
-    width: 180px;
-    height: 140px;
-    background-color: black;
-    position: absolute;
-    margin-top: 525px;
-    margin-left: 556px;
-    transition-property: transform;
-    transition-duration: 36.5s;
-    transition-timing-function: linear;
+@keyframes beepingAlarm {
+    0% {background-color: black;}
+    2.5% {background-color:orangered;}
+    5% {background-color: black;}
+    7.5% {background-color:orangered;}
+    10% {background-color: black;}
+    12.5% {background-color:orangered;}
+    15% {background-color: black;}
+    17.5% {background-color:orangered;}
+    20% {background-color: black;}
+    22.5% {background-color:orangered;}
+    25% {background-color: black;}
+    27.5% {background-color:orangered;}
+    30% {background-color: black;}
+    32.5% {background-color:orangered;}
+    35% {background-color: black;}
+    37.5% {background-color:orangered;}
+    40% {background-color: black;}
+    42.5% {background-color:orangered;}
+    45% {background-color: black;}
+    47.5% {background-color:orangered;}
+    50% {background-color: black;}
+    52.5% {background-color:orangered;}
+    55% {background-color: black;}
+    57.5% {background-color:orangered;}
+    60% {background-color: black;}
+    62.5% {background-color:orangered;}
+    65% {background-color: black;}
+    67.5% {background-color:orangered;}
+    70% {background-color: black;}
+    72.5% {background-color:orangered;}
+    75% {background-color: black;}
+    77.5% {background-color:orangered;}
+    80% {background-color: black;}
+    82.5% {background-color:orangered;}
+    85% {background-color: black;}
+    87.5% {background-color:orangered;}
+    90% {background-color: black;}
+    92.5% {background-color:orangered;}
+    95% {background-color: black;}
+    97.5% {background-color:orangered;}
+    100% {background-color: black;}
 }
 
-.appearbox4 {
+
+
+
+
+
+
+
+
+
+
+
+.sound2 {
+    animation-duration: 1s;
+    animation-name: heavyAlarm;
+    animation-iteration-count: ease-in;
+}
+
+@keyframes heavyAlarm {
+    0% {background-color: black;}
+    80% {background-color: #d00000;}
+    100% {background-color: black;}
+}
+
+
+
+
+
+
+
+
+
+.smallAnimatie {
+    height: 100px;
     width: 100px;
-    height: 250px;
-    background-color: black;
+    top: 45%;
+    right: 46%;
     position: absolute;
-    margin-top: 460px;
-    margin-left: 780px;
-    transition-property: transform;
-    transition-duration: 42s;
-    transition-timing-function: linear;
-    transform: rotate(20deg);
-    //z-index: 1;
+    border-radius: 100%;
+    background-color: #e85d04;
+    z-index: -10;
 }
 
-.appearbox5 {
-    width: 50px;
-    height: 140px;
-    background-color: black;
+.sound3 .smallAnimatie {
+    animation-duration: 1s;
+    animation-name: smallAlarm;  
+}
+
+@keyframes smallAlarm {
+    0% {transform: scale(1);}
+    100% {transform: scale(15);}
+}
+
+
+
+
+
+
+
+
+
+
+.scanAnimatie {
+    height: 10px;
+    width: 100vw;
+    top: 0;
+    opacity: 0;
     position: absolute;
-    margin-top: 505px;
-    margin-left: 825px;
-    transition-property: transform;
-    transition-duration: 7s;
-    transition-timing-function: linear;
 }
 
-.sound0 .appearbox1 {
-    transform: translate(650px);
+.sound4 .scanAnimatie {
+    animation-duration: 2.5s;
+    animation-name: scanSound;
 }
 
-.sound1 .appearbox2 {
-    transform: translate(680px);
+.sound6 .scanAnimatie {
+    animation-duration: 2.5s;
+    animation-name: scanSound;
 }
 
-.sound6 .appearbox3 {
-    transform: translate(530px);
+.sound8 .scanAnimatie {
+    animation-duration: 2.5s;
+    animation-name: scanSound;
 }
 
-.sound10 .appearbox4 {
-    transform: translate(0, -220px);
+@keyframes scanSound {
+    0% {
+    top: 0;
+    opacity: 1;
+  }
+
+  50% {
+    background-color: white;
+    top: 100%;
+    box-shadow: 0px 0px 100px 100px darkcyan;
+  }
+
+  51% {
+    background-color: white;
+    box-shadow: 0px 0px 100px 100px #379634;
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 0;
+    opacity: 0;
+  }
 }
 
-.sound11 .appearbox5 {
-    transform: translate(100px);
+
+
+
+
+
+
+
+
+
+
+.sound10 {
+    animation-duration: 41s;
+    animation-name: highPitch;
 }
 
+@keyframes highPitch {
+    0% {background-color: black;}
+    95% {background-color: white;}
+    100% {background-color: black;}
+}
 
 
 
