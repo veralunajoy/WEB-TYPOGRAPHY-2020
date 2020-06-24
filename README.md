@@ -22,3 +22,9 @@ https://codepen.io/afonsopacifer/pen/xVOLVd
 
 Box shadow (voor glow/ laser effect):
 https://codersblock.com/blog/creating-glow-effects-with-css/
+
+Color palette Blade Runner:
+https://i.pinimg.com/originals/ca/9c/91/ca9c91300cdc0f48649cba2c488c96be.jpg
+
+Shake effect:
+https://www.w3schools.com/howto/howto_css_shake_image.asp
