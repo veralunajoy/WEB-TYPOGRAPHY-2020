@@ -8,9 +8,10 @@ body {
 	width: 85%;
     height: 500px;
     position: relative;
-    
 }
 
+
+/*SPOKEN TEXT*/
 p {
     color: white;
     margin-left: 100px;
@@ -22,10 +23,22 @@ p {
     color: goldenrod;
 }
 
+.voice2 {
+	font-style: italic;
+    color: darkcyan;
+}
+
 .voice3 {
     font-family: "brenner sans bold";
     font-style: italic;
     color: darkred;
+}
+
+.voice4 {
+    font-family: "brenner slab bold";
+    letter-spacing: 3px;
+    font-style: italic;
+    color: #520028;
 }
 
 .sounds {
@@ -55,32 +68,13 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 
-.voice2 {
-	font-style: italic;
-    color: darkcyan;
-}
-
-.voice4 {
-    font-family: "brenner mono regular";
-    font-style: italic;
-    color: orangered;
-}
-
-/* **********************************************
-The first paragraph, with extended timing for 
-	all siblings. Basically what it does is that
-	it shows the text after a delay, which 
-	corresponds with the time that the word is
-	spoken.
-You probably want to change the styling.
-********************************************** */
-
 .p0 span {
 	opacity: 0;
 	font-family: "brenner mono medium";
 }
 
-/////////* LABELS */////////
+
+/* LABELS */
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
@@ -326,17 +320,17 @@ You probably want to change the styling.
 }
 
 .p44.on span:nth-child(-n+2) {
-    background-color: orangered;
+    background-color: #520028;
     color: white;
 }
 
 .p45.on span:nth-child(-n+2) {
-    background-color: orangered;
+    background-color: #520028;
     color: white;
 }
 
 .p46.on span:nth-child(-n+2) {
-    background-color: orangered;
+    background-color: #520028;
     color: white;
 }
 
@@ -346,17 +340,10 @@ You probably want to change the styling.
     margin-right: 10px;
 }
 
-/////////* ANIMATIES */////////
 
- .sound0 .appearbox5 {
-   transform: translate(100px);
-}
+/* ANIMATIES */
 
-
-
-
-
-
+/*BEEPING ANIMATION*/
 .beepAnimatie {
     height: 300px;
     width: 300px;
@@ -417,16 +404,7 @@ You probably want to change the styling.
 }
 
 
-
-
-
-
-
-
-
-
-
-
+/*HEAVY ALARM ANIMATION*/
 .sound2 {
     animation-duration: 1s;
     animation-name: heavyAlarm;
@@ -440,13 +418,7 @@ You probably want to change the styling.
 }
 
 
-
-
-
-
-
-
-
+/*SMALL ALARM ANIMATION*/
 .smallAnimatie {
     height: 100px;
     width: 100px;
@@ -454,7 +426,6 @@ You probably want to change the styling.
     right: 46%;
     position: absolute;
     border-radius: 100%;
-    background-color: #e85d04;
     z-index: -10;
 }
 
@@ -464,19 +435,17 @@ You probably want to change the styling.
 }
 
 @keyframes smallAlarm {
-    0% {transform: scale(1);}
-    100% {transform: scale(15);}
+    0% {background-color: #e85d04;
+        transform: scale(0);
+    }
+    99.5% {background-color: #e85d04;
+        transform: scale(15);
+    }
+    100% {transform: scale(0);}
 }
 
 
-
-
-
-
-
-
-
-
+/*SCAN SOUND ANIMATION*/
 .scanAnimatie {
     height: 10px;
     width: 100vw;
@@ -492,7 +461,7 @@ You probably want to change the styling.
 
 .sound6 .scanAnimatie {
     animation-duration: 2.5s;
-    animation-name: scanSound;
+    animation-name: scanSound2;
 }
 
 .sound8 .scanAnimatie {
@@ -527,28 +496,555 @@ You probably want to change the styling.
   }
 }
 
+@keyframes scanSound2 {
+    0% {
+    top: 0;
+    opacity: 1;
+  }
+
+  50% {
+    background-color: white;
+    top: 100%;
+    box-shadow: 0px 0px 100px 100px darkcyan;
+  }
+
+  51% {
+    background-color: white;
+    box-shadow: 0px 0px 100px 100px #379634;
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
 
 
+/*HIGH PITCH ANIMATION*/
+.bigCircleAnimatie {
+    height: 500px;
+    width: 500px;
+    top: 1.1%;
+    right: 30.7%;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -10;
+}
 
-
-
-
-
-
-
-
-.sound10 {
-    animation-duration: 41s;
+.sound10 .bigCircleAnimatie {
+    animation-duration: 43s;
     animation-name: highPitch;
+    animation-timing-function: linear;
 }
 
 @keyframes highPitch {
+    0% {
+        background-color: black;
+}
+    96% {
+        background-color: white;
+        transform: scale(3);
+}
+    100% {
+        background-color: black;
+        transform: scale(0);
+}
+}
+
+
+/*DARK VIOLIN ANIMATION*/
+.sound11 .bigCircleAnimatie {
+    animation-duration: 42s;
+    animation-name: darkViolins;
+    animation-timing-function: linear;
+}
+
+@keyframes darkViolins {
+    0% {
+        background-color: black;
+        transform: scale(0);
+    }
+    10% {
+        background-color: #210621;
+        transform: scale(2);
+    }
+    21% {
+        background-color: #801a83;
+        transform: scale(3);
+    }
+    34% {
+        background-color: #510040;
+        transform: scale(2.5);
+    }
+    48% {
+        background-color: #210621;
+        transform: scale(1.5);
+    }
+    62% {
+        background-color: #801a83;
+        transform: scale(3);
+    }
+    76% {
+        background-color: #510040;
+        transform: scale(2.5);
+    }
+    86% {
+        background-color: #ab79ab;
+        transform: scale(3);
+    }
+    91% {
+        background-color: #510040;
+        transform: scale(2.5);
+    }
+    100% {
+        background-color: #210621;
+        transform: scale(1);
+    }
+}
+
+
+/*VIBRATING SOUND PART1 ANIMATION*/
+.sound12 #video-placeholder {
+    animation-duration: 10s;
+    animation-name: vibratingPitch;
+}
+
+@keyframes vibratingPitch {
+    0% {transform: translate(0px, 0px) rotate(0deg);}
+    0.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    1% {transform: translate(-2px, 2px) rotate(1deg)}
+    1.5% {transform: translate(1px, 3px) rotate(0deg)}
+    2% {transform: translate(3px, -2px) rotate(1deg)}
+    2.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    3% {transform: translate(-1px, 3px) rotate(0deg)}
+    3.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    4% {transform: translate(-2px, -3px) rotate(1deg)}
+    4.5% {transform: translate(3px, 1px) rotate(0deg)}
+    5% {transform: translate(1px, -3px) rotate(-1deg)}
+    5.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    6% {transform: translate(-1px, 2px) rotate(1deg)}
+    6.5% {transform: translate(1px, 3px) rotate(0deg)}
+    7% {transform: translate(3px, -2px) rotate(1deg)}
+    7.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    8% {transform: translate(-1px, 3px) rotate(0deg)}
+    8.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    9% {transform: translate(-2px, -2px) rotate(1deg)}
+    9.5% {transform: translate(3px, 1px) rotate(0deg)}
+    10% {transform: translate(1px, -3px) rotate(-1deg)}
+    10.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    11% {transform: translate(-1px, 2px) rotate(1deg)}
+    11.5% {transform: translate(1px, 3px) rotate(0deg)}
+    12% {transform: translate(2px, -3px) rotate(1deg)}
+    12.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    13% {transform: translate(-1px, 3px) rotate(0deg)}
+    13.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    14% {transform: translate(-2px, -3px) rotate(1deg)}
+    14.5% {transform: translate(3px, 2px) rotate(0deg)}
+    15% {transform: translate(1px, -3px) rotate(-1deg)}
+    15.5% {transform: translate(-1px, -1px) rotate(-1deg)}
+    16% {transform: translate(-3px, 2px) rotate(1deg)}
+    16.5% {transform: translate(1px, 3px) rotate(0deg)}
+    17% {transform: translate(2px, -2px) rotate(1deg)}
+    17.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    18% {transform: translate(-1px, 3px) rotate(0deg)}
+    18.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    19% {transform: translate(-2px, -2px) rotate(1deg)}
+    19.5% {transform: translate(3px, 1px) rotate(0deg)}
+    20% {transform: translate(1px, -3px) rotate(-1deg)}
+    20.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    21% {transform: translate(-3px, 2px) rotate(1deg)}
+    21.5% {transform: translate(1px, 3px) rotate(0deg)}
+    22% {transform: translate(1px, -3px) rotate(1deg)}
+    22.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    23% {transform: translate(-1px, 3px) rotate(0deg)}
+    23.5% {transform: translate(1px, 1px) rotate(-1deg)}
+    24% {transform: translate(-2px, -2px) rotate(1deg)}
+    24.5% {transform: translate(3px, 3px) rotate(0deg)}
+    25% {transform: translate(1px, -3px) rotate(-1deg)}
+    25.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    26% {transform: translate(-1px, 2px) rotate(1deg)}
+    26.5% {transform: translate(1px, 3px) rotate(0deg)}
+    27% {transform: translate(3px, -2px) rotate(1deg)}
+    27.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    28% {transform: translate(-1px, 3px) rotate(0deg)}
+    28.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    29% {transform: translate(-2px, -2px) rotate(1deg)}
+    29.5% {transform: translate(3px, 1px) rotate(0deg)}
+    30% {transform: translate(1px, -1px) rotate(-1deg)}
+    30.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    31% {transform: translate(-3px, 2px) rotate(1deg)}
+    31.5% {transform: translate(1px, 3px) rotate(0deg)}
+    32% {transform: translate(3px, -1px) rotate(1deg)}
+    32.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    33% {transform: translate(-1px, 3px) rotate(0deg)}
+    33.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    34% {transform: translate(-2px, -3px) rotate(1deg)}
+    34.5% {transform: translate(3px, 1px) rotate(0deg)}
+    35% {transform: translate(1px, -3px) rotate(-1deg)}
+    35.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    36% {transform: translate(-1px, 2px) rotate(1deg)}
+    36.5% {transform: translate(1px, 3px) rotate(0deg)}
+    37% {transform: translate(3px, -2px) rotate(1deg)}
+    37.5% {transform: translate(-1px, 2px) rotate(-1deg)}
+    38% {transform: translate(-1px, 3px) rotate(0deg)}
+    38.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    39% {transform: translate(-2px, -1px) rotate(1deg)}
+    39.5% {transform: translate(3px, 2px) rotate(0deg)}
+    40% {transform: translate(1px, -3px) rotate(-1deg)}
+    40.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    41% {transform: translate(-3px, 2px) rotate(1deg)}
+    41.5% {transform: translate(1px, 3px) rotate(0deg)}
+    42% {transform: translate(2px, -2px) rotate(1deg)}
+    42.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    43% {transform: translate(-1px, 3px) rotate(0deg)}
+    43.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    44% {transform: translate(-2px, -1px) rotate(1deg)}
+    44.5% {transform: translate(3px, 2px) rotate(0deg)}
+    45% {transform: translate(1px, -3px) rotate(-1deg)}
+    45.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    46% {transform: translate(-2px, 2px) rotate(1deg)}
+    46.5% {transform: translate(1px, 3px) rotate(0deg)}
+    47% {transform: translate(3px, -2px) rotate(1deg)}
+    47.5% {transform: translate(-3px, 5px) rotate(-1deg)}
+    48% {transform: translate(-1px, 3px) rotate(0deg)}
+    48.5% {transform: translate(1px, 1px) rotate(-1deg)}
+    49% {transform: translate(-2px, -3px) rotate(1deg)}
+    49.5% {transform: translate(3px, 1px) rotate(0deg)}
+    50% {transform: translate(1px, -2px) rotate(-1deg)}
+    50.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    51% {transform: translate(-2px, 2px) rotate(1deg)}
+    51.5% {transform: translate(1px, 3px) rotate(0deg)}
+    52% {transform: translate(3px, -2px) rotate(1deg)}
+    52.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    53% {transform: translate(-1px, 3px) rotate(0deg)}
+    53.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    54% {transform: translate(-2px, -3px) rotate(1deg)}
+    54.5% {transform: translate(3px, 1px) rotate(0deg)}
+    55% {transform: translate(1px, -3px) rotate(-1deg)}
+    55.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    56% {transform: translate(-1px, 2px) rotate(1deg)}
+    56.5% {transform: translate(1px, 3px) rotate(0deg)}
+    57% {transform: translate(3px, -2px) rotate(1deg)}
+    57.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    58% {transform: translate(-1px, 3px) rotate(0deg)}
+    58.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    59% {transform: translate(-2px, -2px) rotate(1deg)}
+    59.5% {transform: translate(3px, 1px) rotate(0deg)}
+    60% {transform: translate(1px, -3px) rotate(-1deg)}
+    60.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    61% {transform: translate(-1px, 2px) rotate(1deg)}
+    61.5% {transform: translate(1px, 3px) rotate(0deg)}
+    62% {transform: translate(2px, -3px) rotate(1deg)}
+    62.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    63% {transform: translate(-1px, 3px) rotate(0deg)}
+    63.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    64% {transform: translate(-2px, -3px) rotate(1deg)}
+    64.5% {transform: translate(3px, 2px) rotate(0deg)}
+    65% {transform: translate(1px, -3px) rotate(-1deg)}
+    65.5% {transform: translate(-1px, -1px) rotate(-1deg)}
+    66% {transform: translate(-3px, 2px) rotate(1deg)}
+    66.5% {transform: translate(1px, 3px) rotate(0deg)}
+    67% {transform: translate(2px, -2px) rotate(1deg)}
+    67.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    68% {transform: translate(-1px, 3px) rotate(0deg)}
+    68.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    69% {transform: translate(-2px, -2px) rotate(1deg)}
+    69.5% {transform: translate(3px, 1px) rotate(0deg)}
+    70% {transform: translate(1px, -3px) rotate(-1deg)}
+    70.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    71% {transform: translate(-3px, 2px) rotate(1deg)}
+    71.5% {transform: translate(1px, 3px) rotate(0deg)}
+    72% {transform: translate(1px, -3px) rotate(1deg)}
+    72.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    73% {transform: translate(-1px, 3px) rotate(0deg)}
+    73.5% {transform: translate(1px, 1px) rotate(-1deg)}
+    74% {transform: translate(-2px, -2px) rotate(1deg)}
+    74.5% {transform: translate(3px, 3px) rotate(0deg)}
+    75% {transform: translate(1px, -3px) rotate(-1deg)}
+    75.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    76% {transform: translate(-1px, 2px) rotate(1deg)}
+    76.5% {transform: translate(1px, 3px) rotate(0deg)}
+    77% {transform: translate(3px, -2px) rotate(1deg)}
+    77.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    78% {transform: translate(-1px, 3px) rotate(0deg)}
+    78.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    79% {transform: translate(-2px, -2px) rotate(1deg)}
+    79.5% {transform: translate(3px, 1px) rotate(0deg)}
+    80% {transform: translate(1px, -1px) rotate(-1deg)}
+    80.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    81% {transform: translate(-3px, 2px) rotate(1deg)}
+    81.5% {transform: translate(1px, 3px) rotate(0deg)}
+    82% {transform: translate(3px, -1px) rotate(1deg)}
+    82.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    83% {transform: translate(-1px, 3px) rotate(0deg)}
+    83.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    84% {transform: translate(-2px, -3px) rotate(1deg)}
+    84.5% {transform: translate(3px, 1px) rotate(0deg)}
+    85% {transform: translate(1px, -3px) rotate(-1deg)}
+    85.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    86% {transform: translate(-1px, 2px) rotate(1deg)}
+    86.5% {transform: translate(1px, 3px) rotate(0deg)}
+    87% {transform: translate(3px, -2px) rotate(1deg)}
+    87.5% {transform: translate(-1px, 2px) rotate(-1deg)}
+    88% {transform: translate(-1px, 3px) rotate(0deg)}
+    88.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    89% {transform: translate(-2px, -1px) rotate(1deg)}
+    89.5% {transform: translate(3px, 2px) rotate(0deg)}
+    90% {transform: translate(1px, -3px) rotate(-1deg)}
+    90.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    91% {transform: translate(-3px, 2px) rotate(1deg)}
+    91.5% {transform: translate(1px, 3px) rotate(0deg)}
+    92% {transform: translate(2px, -2px) rotate(1deg)}
+    92.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    93% {transform: translate(-1px, 3px) rotate(0deg)}
+    93.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    94% {transform: translate(-2px, -1px) rotate(1deg)}
+    94.5% {transform: translate(3px, 2px) rotate(0deg)}
+    95% {transform: translate(1px, -3px) rotate(-1deg)}
+    95.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    96% {transform: translate(-2px, 2px) rotate(1deg)}
+    96.5% {transform: translate(1px, 3px) rotate(0deg)}
+    97% {transform: translate(3px, -2px) rotate(1deg)}
+    97.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    98% {transform: translate(-1px, 3px) rotate(0deg)}
+    98.5% {transform: translate(1px, 1px) rotate(-1deg)}
+    99% {transform: translate(-2px, -3px) rotate(1deg)}
+    99.5% {transform: translate(3px, 1px) rotate(0deg)}
+    100% {transform: translate(0px, 0px) rotate(0deg)}
+}
+
+
+/*BEEPING ALERT ANIMATION*/
+.sound13 .beepAnimatie {
+    animation-duration: 1s;
+    animation-name: beepingAlert;
+}
+
+@keyframes beepingAlert {
     0% {background-color: black;}
-    95% {background-color: white;}
+    10% {background-color: #7bac91;}
+    20% {background-color: black;}
+    30% {background-color: #7bac91;}
+    40% {background-color: black;}
+    50% {background-color: #7bac91;}
+    60% {background-color: black;}
+    70% {background-color: #7bac91;}
+    80% {background-color: black;}
+    90% {background-color: #7bac91;}
     100% {background-color: black;}
 }
 
 
+/*VIBRATING SOUND PART2 ANIMATION*/
+.sound14 #video-placeholder {
+    animation-duration: 10s;
+    animation-name: vibratingPitch2;
+}
+
+@keyframes vibratingPitch2 {
+    0% {transform: translate(0px, 0px) rotate(0deg);}
+    0.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    1% {transform: translate(-2px, 2px) rotate(1deg)}
+    1.5% {transform: translate(1px, 3px) rotate(0deg)}
+    2% {transform: translate(3px, -2px) rotate(1deg)}
+    2.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    3% {transform: translate(-1px, 3px) rotate(0deg)}
+    3.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    4% {transform: translate(-2px, -3px) rotate(1deg)}
+    4.5% {transform: translate(3px, 1px) rotate(0deg)}
+    5% {transform: translate(1px, -3px) rotate(-1deg)}
+    5.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    6% {transform: translate(-1px, 2px) rotate(1deg)}
+    6.5% {transform: translate(1px, 3px) rotate(0deg)}
+    7% {transform: translate(3px, -2px) rotate(1deg)}
+    7.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    8% {transform: translate(-1px, 3px) rotate(0deg)}
+    8.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    9% {transform: translate(-2px, -2px) rotate(1deg)}
+    9.5% {transform: translate(3px, 1px) rotate(0deg)}
+    10% {transform: translate(1px, -3px) rotate(-1deg)}
+    10.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    11% {transform: translate(-1px, 2px) rotate(1deg)}
+    11.5% {transform: translate(1px, 3px) rotate(0deg)}
+    12% {transform: translate(2px, -3px) rotate(1deg)}
+    12.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    13% {transform: translate(-1px, 3px) rotate(0deg)}
+    13.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    14% {transform: translate(-2px, -3px) rotate(1deg)}
+    14.5% {transform: translate(3px, 2px) rotate(0deg)}
+    15% {transform: translate(1px, -3px) rotate(-1deg)}
+    15.5% {transform: translate(-1px, -1px) rotate(-1deg)}
+    16% {transform: translate(-3px, 2px) rotate(1deg)}
+    16.5% {transform: translate(1px, 3px) rotate(0deg)}
+    17% {transform: translate(2px, -2px) rotate(1deg)}
+    17.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    18% {transform: translate(-1px, 3px) rotate(0deg)}
+    18.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    19% {transform: translate(-2px, -2px) rotate(1deg)}
+    19.5% {transform: translate(3px, 1px) rotate(0deg)}
+    20% {transform: translate(1px, -3px) rotate(-1deg)}
+    20.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    21% {transform: translate(-3px, 2px) rotate(1deg)}
+    21.5% {transform: translate(1px, 3px) rotate(0deg)}
+    22% {transform: translate(1px, -3px) rotate(1deg)}
+    22.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    23% {transform: translate(-1px, 3px) rotate(0deg)}
+    23.5% {transform: translate(1px, 1px) rotate(-1deg)}
+    24% {transform: translate(-2px, -2px) rotate(1deg)}
+    24.5% {transform: translate(3px, 3px) rotate(0deg)}
+    25% {transform: translate(1px, -3px) rotate(-1deg)}
+    25.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    26% {transform: translate(-1px, 2px) rotate(1deg)}
+    26.5% {transform: translate(1px, 3px) rotate(0deg)}
+    27% {transform: translate(3px, -2px) rotate(1deg)}
+    27.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    28% {transform: translate(-1px, 3px) rotate(0deg)}
+    28.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    29% {transform: translate(-2px, -2px) rotate(1deg)}
+    29.5% {transform: translate(3px, 1px) rotate(0deg)}
+    30% {transform: translate(1px, -1px) rotate(-1deg)}
+    30.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    31% {transform: translate(-3px, 2px) rotate(1deg)}
+    31.5% {transform: translate(1px, 3px) rotate(0deg)}
+    32% {transform: translate(3px, -1px) rotate(1deg)}
+    32.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    33% {transform: translate(-1px, 3px) rotate(0deg)}
+    33.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    34% {transform: translate(-2px, -3px) rotate(1deg)}
+    34.5% {transform: translate(3px, 1px) rotate(0deg)}
+    35% {transform: translate(1px, -3px) rotate(-1deg)}
+    35.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    36% {transform: translate(-1px, 2px) rotate(1deg)}
+    36.5% {transform: translate(1px, 3px) rotate(0deg)}
+    37% {transform: translate(3px, -2px) rotate(1deg)}
+    37.5% {transform: translate(-1px, 2px) rotate(-1deg)}
+    38% {transform: translate(-1px, 3px) rotate(0deg)}
+    38.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    39% {transform: translate(-2px, -1px) rotate(1deg)}
+    39.5% {transform: translate(3px, 2px) rotate(0deg)}
+    40% {transform: translate(1px, -3px) rotate(-1deg)}
+    40.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    41% {transform: translate(-3px, 2px) rotate(1deg)}
+    41.5% {transform: translate(1px, 3px) rotate(0deg)}
+    42% {transform: translate(2px, -2px) rotate(1deg)}
+    42.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    43% {transform: translate(-1px, 3px) rotate(0deg)}
+    43.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    44% {transform: translate(-2px, -1px) rotate(1deg)}
+    44.5% {transform: translate(3px, 2px) rotate(0deg)}
+    45% {transform: translate(1px, -3px) rotate(-1deg)}
+    45.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    46% {transform: translate(-2px, 2px) rotate(1deg)}
+    46.5% {transform: translate(1px, 3px) rotate(0deg)}
+    47% {transform: translate(3px, -2px) rotate(1deg)}
+    47.5% {transform: translate(-3px, 5px) rotate(-1deg)}
+    48% {transform: translate(-1px, 3px) rotate(0deg)}
+    48.5% {transform: translate(1px, 1px) rotate(-1deg)}
+    49% {transform: translate(-2px, -3px) rotate(1deg)}
+    49.5% {transform: translate(3px, 1px) rotate(0deg)}
+    50% {transform: translate(1px, -2px) rotate(-1deg)}
+    50.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    51% {transform: translate(-2px, 2px) rotate(1deg)}
+    51.5% {transform: translate(1px, 3px) rotate(0deg)}
+    52% {transform: translate(3px, -2px) rotate(1deg)}
+    52.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    53% {transform: translate(-1px, 3px) rotate(0deg)}
+    53.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    54% {transform: translate(-2px, -3px) rotate(1deg)}
+    54.5% {transform: translate(3px, 1px) rotate(0deg)}
+    55% {transform: translate(1px, -3px) rotate(-1deg)}
+    55.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    56% {transform: translate(-1px, 2px) rotate(1deg)}
+    56.5% {transform: translate(1px, 3px) rotate(0deg)}
+    57% {transform: translate(3px, -2px) rotate(1deg)}
+    57.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    58% {transform: translate(-1px, 3px) rotate(0deg)}
+    58.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    59% {transform: translate(-2px, -2px) rotate(1deg)}
+    59.5% {transform: translate(3px, 1px) rotate(0deg)}
+    60% {transform: translate(1px, -3px) rotate(-1deg)}
+    60.5% {transform: translate(-3px, -1px) rotate(-1deg)}
+    61% {transform: translate(-1px, 2px) rotate(1deg)}
+    61.5% {transform: translate(1px, 3px) rotate(0deg)}
+    62% {transform: translate(2px, -3px) rotate(1deg)}
+    62.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    63% {transform: translate(-1px, 3px) rotate(0deg)}
+    63.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    64% {transform: translate(-2px, -3px) rotate(1deg)}
+    64.5% {transform: translate(3px, 2px) rotate(0deg)}
+    65% {transform: translate(1px, -3px) rotate(-1deg)}
+    65.5% {transform: translate(-1px, -1px) rotate(-1deg)}
+    66% {transform: translate(-3px, 2px) rotate(1deg)}
+    66.5% {transform: translate(1px, 3px) rotate(0deg)}
+    67% {transform: translate(2px, -2px) rotate(1deg)}
+    67.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    68% {transform: translate(-1px, 3px) rotate(0deg)}
+    68.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    69% {transform: translate(-2px, -2px) rotate(1deg)}
+    69.5% {transform: translate(3px, 1px) rotate(0deg)}
+    70% {transform: translate(1px, -3px) rotate(-1deg)}
+    70.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    71% {transform: translate(-3px, 2px) rotate(1deg)}
+    71.5% {transform: translate(1px, 3px) rotate(0deg)}
+    72% {transform: translate(1px, -3px) rotate(1deg)}
+    72.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    73% {transform: translate(-1px, 3px) rotate(0deg)}
+    73.5% {transform: translate(1px, 1px) rotate(-1deg)}
+    74% {transform: translate(-2px, -2px) rotate(1deg)}
+    74.5% {transform: translate(3px, 3px) rotate(0deg)}
+    75% {transform: translate(1px, -3px) rotate(-1deg)}
+    75.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    76% {transform: translate(-1px, 2px) rotate(1deg)}
+    76.5% {transform: translate(1px, 3px) rotate(0deg)}
+    77% {transform: translate(3px, -2px) rotate(1deg)}
+    77.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    78% {transform: translate(-1px, 3px) rotate(0deg)}
+    78.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    79% {transform: translate(-2px, -2px) rotate(1deg)}
+    79.5% {transform: translate(3px, 1px) rotate(0deg)}
+    80% {transform: translate(1px, -1px) rotate(-1deg)}
+    80.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    81% {transform: translate(-3px, 2px) rotate(1deg)}
+    81.5% {transform: translate(1px, 3px) rotate(0deg)}
+    82% {transform: translate(3px, -1px) rotate(1deg)}
+    82.5% {transform: translate(-3px, 2px) rotate(-1deg)}
+    83% {transform: translate(-1px, 3px) rotate(0deg)}
+    83.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    84% {transform: translate(-2px, -3px) rotate(1deg)}
+    84.5% {transform: translate(3px, 1px) rotate(0deg)}
+    85% {transform: translate(1px, -3px) rotate(-1deg)}
+    85.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    86% {transform: translate(-1px, 2px) rotate(1deg)}
+    86.5% {transform: translate(1px, 3px) rotate(0deg)}
+    87% {transform: translate(3px, -2px) rotate(1deg)}
+    87.5% {transform: translate(-1px, 2px) rotate(-1deg)}
+    88% {transform: translate(-1px, 3px) rotate(0deg)}
+    88.5% {transform: translate(3px, 1px) rotate(-1deg)}
+    89% {transform: translate(-2px, -1px) rotate(1deg)}
+    89.5% {transform: translate(3px, 2px) rotate(0deg)}
+    90% {transform: translate(1px, -3px) rotate(-1deg)}
+    90.5% {transform: translate(-2px, -1px) rotate(-1deg)}
+    91% {transform: translate(-3px, 2px) rotate(1deg)}
+    91.5% {transform: translate(1px, 3px) rotate(0deg)}
+    92% {transform: translate(2px, -2px) rotate(1deg)}
+    92.5% {transform: translate(-3px, 1px) rotate(-1deg)}
+    93% {transform: translate(-1px, 3px) rotate(0deg)}
+    93.5% {transform: translate(2px, 1px) rotate(-1deg)}
+    94% {transform: translate(-2px, -1px) rotate(1deg)}
+    94.5% {transform: translate(3px, 2px) rotate(0deg)}
+    95% {transform: translate(1px, -3px) rotate(-1deg)}
+    100% {transform: translate(0px, 0px) rotate(0deg)}
+}
+
+
+    
+    
+
+    
 
 
 
