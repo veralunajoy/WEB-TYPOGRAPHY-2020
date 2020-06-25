@@ -23,24 +23,33 @@ Ik heb een steuntje in de rug gekregen dat het er goed uitzag. Dat was een opluc
 
 #### Gevisualiseerde sounds
 Voor ```beepingAlarm``` heb ik een klein rood knipperend cirkeltje in de hoek gemaakt. Dit omdat de sound niet heel erg opvalt (dus daarom ook niet over het hele scherm), maar ik vond 'm wel belangrijk genoeg om erin te zetten.
+
 <img height="200" src="images/beepingalarm.png" alt="">
 
 Voor ```heavyAlarm``` heb ik een knalrode schermvullende kleur gekozen, want: heavy!
+
 <img height="200" src="images/heavyalarm.png" alt="">
 
 Voor ```smallAlarm``` heb ik een oranje cirkel gemaakt die achter de ```iframe``` vandaan komt en heel snel groot wordt. Hij is oranje omdat ie minder 'angstaanjagend' is dan de ```heavyAlarm```.
+
 <img height="200" src="images/smallalarm.png" alt="">
 
 Voor ```scanSound``` heb ik gepriegeld om een echte 'scan' te maken. Eentje die scant (blauw) en goedkeurt (groen). Ik moest het wel even opzoeken hoe ik een _glowing effect_ kon maken.
+
 <img height="200" src="images/scan1.png" alt="">
+
 <img height="200" src="images/scan2.png" alt="">
 
 Voor ```highPitch``` heb ik uiteindelijk gekozen voor wederom een cirkel die achter de ```iframe``` vandaan komt. Deze wordt steeds groter en steeds witter. Ik vond het contrast tussen de zwarte achtergrondkleur en het felle wit passen bij het contrast wat het schelle geluid heeft op de rest van de scene die over het algemeen uit lage tonen bestaat.
+
 <img height="200" src="images/highpitch.png" alt="">
+
 <img height="200" src="images/highpitch2.png" alt="">
 
 Voor ```darkViolins``` heb ik het idee van de cirkel doorgetrokken. Dit keer 'ademt' en verkleurt hij mee met de muziek. Bij hogere tonen wordt de cirkel groter en lichter en bij lagere tonen wordt hij donkerder en kleiner.
+
 <img height="200" src="images/darkviolins1.png" alt="">
+
 <img height="200" src="images/darkviolins2.png" alt="">
 
 ```vibratingPitch```
@@ -51,8 +60,11 @@ Er is op een gegeven moment een heel kort beeping alertje en die heb ik ook gevi
 
 #### Kleurenpalet
 Als laatste kon ik het niet laten om een kleurenpalet te maken van de film (een ander scene dat wel). Ik wist op een gegeven moment niet zo goed welke kleuren ik nog kon gebruiken, bijvoorbeeld voor de cirkels van ```darkViolins```. Dit kleurenpalet gaf me wat extra inspiratie en daarom heb ik de kleur paars gekozen voor de ```darkViolins```.
+
 <img height="200" src="images/colorpalette.jpg" alt="">
+
 <img height="200" src="images/colors1.png" alt="">
+
 <img height="200" src="images/colors2.png" alt="">
 
 ### BRONNEN
