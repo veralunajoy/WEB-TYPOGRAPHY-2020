@@ -23,25 +23,25 @@ Ik heb een steuntje in de rug gekregen dat het er goed uitzag. Dat was een opluc
 
 #### Gevisualiseerde sounds
 ```beepingAlarm```
-<img height="200" src="images/beepingalarm.jpg" alt="">
+<img height="200" src="images/beepingalarm.png" alt="">
 
 ```heavyAlarm```
-<img height="200" src="images/heavyalarm.jpg" alt="">
+<img height="200" src="images/heavyalarm.png" alt="">
 
 ```smallAlarm```
-<img height="200" src="images/smallalarm.jpg" alt="">
+<img height="200" src="images/smallalarm.png" alt="">
 
 ```scanSound```
-<img height="200" src="images/scan1.jpg" alt="">
-<img height="200" src="images/scan2.jpg" alt="">
+<img height="200" src="images/scan1.png" alt="">
+<img height="200" src="images/scan2.png" alt="">
 
 ```highPitch```
-<img height="200" src="images/highpitch.jpg" alt="">
-<img height="200" src="images/highpitch2.jpg" alt="">
+<img height="200" src="images/highpitch.png" alt="">
+<img height="200" src="images/highpitch2.png" alt="">
 
 ```darkViolins```
-<img height="200" src="images/darkviolins1.jpg" alt="">
-<img height="200" src="images/darkviolins2.jpg" alt="">
+<img height="200" src="images/darkviolins1.png" alt="">
+<img height="200" src="images/darkviolins2.png" alt="">
 
 ```vibratingPitch```
 Omdat dezelfde hoge piep terug lijkt te komen allen dan wat minder constant en trilleriger heb ik gekozen om de ```iframe``` te latem trillen.
@@ -52,8 +52,8 @@ Er is op een gegeven moment een heel kort beeping alertje en die heb ik ook gevi
 #### Kleurenpalet
 Als laatste kon ik het niet laten om een kleurenpalet te maken van de film (een ander scene dat wel). Ik wist op een gegeven moment niet zo goed welke kleuren ik nog kon gebruiken, bijvoorbeeld voor de cirkels van ```darkViolins```. Dit kleurenpalet gaf me wat extra inspiratie en daarom heb ik de kleur paars gekozen voor de ```darkViolins```.
 <img height="200" src="images/colorpalette.jpg" alt="">
-<img height="200" src="images/colors1.jpg" alt="">
-<img height="200" src="images/colors2.jpg" alt="">
+<img height="200" src="images/colors1.png" alt="">
+<img height="200" src="images/colors2.png" alt="">
 
 ### BRONNEN
 * Scale: https://codepen.io/afonsopacifer/pen/xVOLVd
