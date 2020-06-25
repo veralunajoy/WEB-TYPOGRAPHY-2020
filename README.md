@@ -52,11 +52,9 @@ Voor ```darkViolins``` heb ik het idee van de cirkel doorgetrokken. Dit keer 'ad
 
 <img height="200" src="images/darkviolins2.png" alt="">
 
-```vibratingPitch```
-Omdat dezelfde hoge piep terug lijkt te komen allen dan wat minder constant en trilleriger heb ik gekozen om de ```iframe``` te latem trillen.
+Omdat bij ```vibratingPitch``` dezelfde hoge pieptoon terug lijkt te komen alleen dan wat minder constant en trilleriger heb ik gekozen om de ```iframe``` te latem trillen.
 
-```beepingAlert```
-Er is op een gegeven moment een heel kort beeping alertje en die heb ik ook gevisualiseerd. Hij is alleen te kort om er een screencapture van te maken...
+Er is op een gegeven moment een heel kort beeping alertje ```beepingAlert``` en die heb ik ook gevisualiseerd. Hij is alleen te kort om er een screencapture van te maken...
 
 #### Kleurenpalet
 Als laatste kon ik het niet laten om een kleurenpalet te maken van de film (een ander scene dat wel). Ik wist op een gegeven moment niet zo goed welke kleuren ik nog kon gebruiken, bijvoorbeeld voor de cirkels van ```darkViolins```. Dit kleurenpalet gaf me wat extra inspiratie en daarom heb ik de kleur paars gekozen voor de ```darkViolins```.
